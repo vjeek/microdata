@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("VJeek.Microdata")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Schema.org structured data in JSON-LD format for web applications")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("VJeek")]
 [assembly: AssemblyProduct("VJeek.Microdata")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
