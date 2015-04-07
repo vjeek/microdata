@@ -31,7 +31,7 @@ namespace VJeek.Microdata.Tests
 				}
 			};
 
-			System.Diagnostics.Debug.Write(@event.ToJson(Formatting.Indented));
+			System.Diagnostics.Debug.Write(@event.ToJson(true));
 		}
 	}
 }

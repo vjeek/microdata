@@ -14,14 +14,15 @@ namespace VJeek.Microdata
 		[JsonProperty("@type", Order = 2)]
 		public virtual string Type { get { return this.GetType().Name; } }
 
-		public virtual string ToJson(Formatting formatting)
+		public virtual string ToJson(bool ident = false)
 		{
 			var settings = new JsonSerializerSettings()
 			{
 				ContractResolver = new DefaultContractResolver()
 			};
 
-			
+			var formatting = ident ? Formatting.Indented : Formatting.None;
+
 			string item = JsonConvert.SerializeObject(this, formatting, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
 
 			dynamic dItem = JsonConvert.DeserializeObject<dynamic>(item);

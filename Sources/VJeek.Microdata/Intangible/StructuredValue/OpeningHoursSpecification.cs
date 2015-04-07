@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace VJeek.Microdata.Intangible.StructuredValue
 {
-	public partial class OpeningHoursSpecification : Thing
+	public partial class OpeningHoursSpecification : StructuredValue
 	{
 		[JsonProperty("closes")]
 		public TimeSpan Closes { get; set; }

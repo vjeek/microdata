@@ -9,7 +9,7 @@ using VJeek.Microdata.Intangible.Enumeration;
 
 namespace VJeek.Microdata.Intangible.StructuredValue
 {
-	public partial class ContactPoint : Thing
+	public partial class ContactPoint : StructuredValue
 	{
 		[JsonProperty("areaServed")]
 		public AdministrativeArea AreaServed { get; set; }
