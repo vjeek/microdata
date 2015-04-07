@@ -48,7 +48,7 @@ namespace VJeek.Microdata
 		public CreativeWork RecordedIn { get; set; }
 
 		[JsonProperty("startDate")]
-		public DateTime? StartDate { get; set; }
+		public DateTime StartDate { get; set; }
 
 		[JsonProperty("subEvent")]
 		public Event SubEvent { get; set; }
