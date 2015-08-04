@@ -9,7 +9,7 @@ namespace VJeek.Microdata.Intangible
 	public class Offer : Thing
 	{
 		[JsonProperty("acceptedPaymentMethod")]
-		public PaymentMethod AcceptedPaymentMethod { get; set; }
+		public PaymentMethod? AcceptedPaymentMethod { get; set; }
 
 		[JsonProperty("addOn")]
 		public Offer AddOn { get; set; }
@@ -21,7 +21,7 @@ namespace VJeek.Microdata.Intangible
 		public AggregateRating AggregateRating { get; set; }
 
 		[JsonProperty("availability")]
-		public ItemAvailability Availability { get; set; }
+		public ItemAvailability? Availability { get; set; }
 
 		[JsonProperty("availabilityEnds")]
 		public DateTime? AvailabilityEnds { get; set; }
@@ -33,10 +33,10 @@ namespace VJeek.Microdata.Intangible
 		public Place AvailableAtOrFrom { get; set; }
 
 		[JsonProperty("availableDeliveryMethod")]
-		public DeliveryMethod AvailableDeliveryMethod { get; set; }
+		public DeliveryMethod? AvailableDeliveryMethod { get; set; }
 
 		[JsonProperty("businessFunction")]
-		public BusinessFunction BusinessFunction { get; set; }
+		public BusinessFunction? BusinessFunction { get; set; }
 
 		[JsonProperty("category")]
 		public string Category { get; set; }

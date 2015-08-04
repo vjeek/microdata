@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
+using VJeek.Microdata.Intangible;
 using VJeek.Microdata.Intangible.StructuredValue;
 
 namespace VJeek.Microdata.Tests
@@ -27,6 +29,15 @@ namespace VJeek.Microdata.Tests
 						AddressLocality = "г. Москва",
 						AddressRegion = "Москва",
 						StreetAddress = "ул.Садовническая 76"
+					}
+				},
+				Offers = new List<Offer>()
+				{
+					new AggregateOffer()
+					{
+						LowPrice = 1000,
+						HighPrice = 2000,
+						OfferCount = 100
 					}
 				}
 			};

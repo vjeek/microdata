@@ -50,6 +50,7 @@
     <Compile Include="CreativeWork.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="Event.cs" />
+    <Compile Include="Intangible\AggregateOffer.cs" />
     <Compile Include="Intangible\AggregateRating.cs" />
     <Compile Include="Intangible\Enumeration\BusinessFunction.cs" />
     <Compile Include="Intangible\Enumeration\ContactPointOption.cs" />
